@@ -1,0 +1,435 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fraunces', sans-serif
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+ .header{
+    background: url('./images/desktop/image-header.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; 
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.triangle{
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, white 50%, white 100%);
+    display: none;
+}
+
+nav ul li:last-child a{
+    padding: 7px 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #000;
+}
+
+nav ul li:last-child:hover a{
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.ham-burger{
+    display: none;
+}
+
+.header h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 11%;
+}
+
+@media (max-width: 700px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: #fff;
+        top: 9%;
+        left: 4%;
+        width: 90%;
+        padding: 2rem;
+        display: none;
+       
+    }
+
+    .show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: #fff;
+        top: 9%;
+        left: 4%;
+        width: 90%;
+        padding: 2rem;
+        transition: transform 2s;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 23px;
+    }
+
+    nav ul li:last-child{
+        margin-bottom: 0;
+    }
+
+    .ham-burger{
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        opacity: .7;
+    }
+
+    .triangle{
+        display: inline-block;
+        position: absolute;
+        top: 7%;
+        right: 6%;
+        display: none;
+    }
+    
+   
+
+    nav ul li a{
+    color:    hsl(232, 10%, 55%);
+    }
+
+    nav ul li:last-child a{
+        padding: 13px 27px;
+        border-radius: 19px;
+        background-color: yellow;
+        color: #000;
+    }
+
+    .header h1{
+        margin-top: 22%;
+    }
+    
+}
+
+
+.row {
+    display: flex;
+    height: 85vh;
+  }
+  
+  .first-col {
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding: 8rem;
+  }
+  
+  .second-col {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+
+  .first-col h2{
+    color: hsl(212, 27%, 19%);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .first-col p{
+    padding: 1.7rem 0;
+    color: hsl(213, 9%, 39%);
+    line-height: 1.8;
+  }
+
+  .first-col button{
+    text-transform: uppercase;
+    font-family: Fraunces,serif;
+    color: #23303e;
+    border: 0;
+    font-weight: 900;
+    font-size: 1rem;
+    padding-inline: 0.3rem;
+    cursor: pointer;
+    background: hsla(0,0%,100%,.533) linear-gradient(180deg,#fff 50%,#fad400);
+    background-blend-mode: overlay;
+  }
+  
+  .second-col img {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  .col-2 img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .image-graphic-flex{
+    flex-basis: 50%;
+  }
+
+  .text-container{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    text-align: center;
+    padding: 0 9.5rem ;
+  }
+
+  .text-container p{
+    margin-top: 2rem;
+    line-height: 1.7;
+    color: hsl(198, 62%, 26%);
+  }
+
+
+  /* FOR GRAPHIC AND PHOTOGRAPHY POSITIONING RELATIVE */
+
+  .image-graphic,.photography{
+    position: relative;
+  }
+
+  /* FOR GRAPHIC AND PHOTOGRAPHY POSITIONING RELATIVE  Ends Here */
+
+  /*     MEDIA QUERY FOR PHOTOGRAPHY AND GRAPHICS ONLY */
+
+@media (max-width: 700px){
+  .text-container{
+    padding: 0;
+  }
+  .row{
+    height: 100vh;
+  }
+  
+}
+
+
+/* testimonials */
+
+.testimonials-row{
+  width: 80%;
+  margin: 5.8rem auto 0;
+}
+
+.testimonials{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.testimonials-row h3{
+  text-align: center;
+  color: hsl(213, 9%, 39%);
+
+}
+
+.testimonial-col{
+  flex-basis: 30%;
+}
+
+.testimonial-col p{
+  margin: 2.8rem 0;
+  color: hsl(213, 9%, 39%);
+  line-height: 1.7;
+ 
+}
+
+.testimonial-col img{
+  width: 55px;
+  border-radius: 100%;
+}
+
+
+
+
+.client-name{
+  display: block;
+  padding-bottom: 5px;
+  font-family: 'Fraunces', sans-serif
+
+}
+
+.testimonial-col span:last-child{
+  color :hsl(210, 4%, 67%);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/* Images */
+.images-div{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7rem;
+  gap: 0;
+}
+
+.image-container{
+  flex-basis: 25%;
+
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Footer */
+footer{
+  background-color:hsla(168, 75%, 64%, 0.598);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo{
+padding: 2rem 0;
+}
+
+footer ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+
+}
+
+footer ul li{
+margin-left: 2rem;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: hsl(168, 34%, 41%);
+}
+
+footer ul li:hover a, footer ul li:hover img{
+  cursor: pointer;
+  color: #fff;
+}
+
+
+
+  @media (min-width: 1440px){
+      .width{
+        width: 80%;
+      }
+    }
+
+
+  @media (max-width: 700px){
+     .row{
+        flex-direction: column-reverse;
+       
+     }
+
+     .first-col {
+        flex-basis: 100%;;
+        padding: 0;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .first-col h2{
+        font-size: 2rem;
+      }
+      
+      .second-col {
+        flex-basis: 100%;
+      }
+
+      .second-row{
+        flex-direction: column;
+      }
+
+.photography-row{
+  height: 100%;
+}
+
+.testimonials-row{
+  height: 1000px;
+  width: 100%;
+}
+
+.testimonials{
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+
+
+.testimonial-col{
+  max-width: 300px;
+}
+
+.image-container{
+  flex-basis: 50%;
+}
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

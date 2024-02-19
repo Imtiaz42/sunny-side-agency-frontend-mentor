@@ -166,7 +166,7 @@ nav ul li:last-child:hover a{
   .first-col {
     flex-basis: 50%;
     flex-grow: 1;
-    padding: 8rem;
+    padding: 5rem;
   }
   
   .second-col {
@@ -219,7 +219,7 @@ nav ul li:last-child:hover a{
     bottom: 10%;
     right: 0;
     text-align: center;
-    padding: 0 9.5rem ;
+    padding: 0 3.5rem ;
   }
 
   .text-container p{
